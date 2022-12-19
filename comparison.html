@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Palette-based appearance decomposition on Neural Radiance Fields.">
+  <meta name="keywords" content="PaletteNeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PaletteNeRF: Palette-based Appearance Editing of Neural Radiance Fields</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <span style="color: #6ada43">P</span><span style="color: #f43233">a</span><span style="color: #9c7563">l</span><span style="color: #1fa0e7">e</span><span style="color: #eba602">t</span><span style="color: #eba602">t</span><span style="color: #1fa0e7">e</span>NeRF: Palette-based Appearance Editing of Neural Radiance Fields</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhengfeikuang.com">Zhengfei Kuang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://luanfujun.github.io">Fujun Luan</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://sai-bi.github.io/">Sai Bi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://zhixinshu.github.io/">Zhixin Shu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.kalyans.org/">Kalyan Sunkavalli</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Stanford University,</span>
+            <span class="author-block"><sup>2</sup>Adobe Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Coming Soon</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparitive Results</h2>
+        <div class="content has-text-justified">
+        Here we show several representative comparisons between our method and other state-of-the-art methods. For more results, please refer to our paper and supplementary.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="item dir-0">
+        <video poster="" id="dir-0" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/video_comparison.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <h2 class="subtitle has-text-centered">Comparison with the palette-based video recoloring method of <a href="https://cragl.cs.gmu.edu/videopalette/">Du et al.</a></h2>   
+  </div>  
+  <div class="hero-body">
+    <div class="container">
+      <div class="item delta-0">
+        <video poster="" id="delta-0" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/stylization.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <h2 class="subtitle has-text-centered">Comparison with stylization methods</h2>   
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="item delta-0">
+        <img src="./static/images/recoloring_comparison.jpg" width="100%">   
+      </div>
+    </div>
+    <h2 class="subtitle has-text-centered">Comparison with palette-based image recoloring methods</h2>   
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
